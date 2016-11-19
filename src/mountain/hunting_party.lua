@@ -3,6 +3,7 @@
 -- You can use findNearestEnemy() on your soldiers to get their nearest enemy instead of yours.
 -- NOTE: This code may be SLOW when run, because of the loop-within-a-loop solution in the code,
 -- causing an O(n^2) runtime.
+-- Also NOTE: This code does NOT keep all your troops alive.
 while true do
     local friends = hero:findFriends()
     for i=1,#friends do
