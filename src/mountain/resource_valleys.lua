@@ -7,7 +7,7 @@ local function commandPeasant(peasant, coins)
     -- Command the peasant to the nearest of their array
     local coin = peasant:findNearest(coins)
     if coin then
-        hero:command(peasant, "move", coin.pos)
+        hero:command(peasant, "move", {x = coin.pos.x, y = coin.pos.y})
     end
 end
 
