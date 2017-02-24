@@ -1,4 +1,5 @@
 ![CodeCombat Logo][]
+
 These are solutions for levels in CodeCombat ([codecombat.com][]).
 
 They will be separated based on region (dungeon, forest, desert, mountain, and glacier).
