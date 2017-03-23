@@ -20,7 +20,7 @@ local shift = 8
 
 while (routeIndex < route.length) do
     local direction = route[routeIndex]
-    if (direction > 0) then
+    if (direction > 1) then
         moveUpRight(shift)
     else
         -- Use a function moveDownRight with the shift 8:
