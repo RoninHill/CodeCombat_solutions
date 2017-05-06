@@ -1,5 +1,3 @@
-# You MUST click on the HELP button to see a detailed description of this level!
-
 # The raven will tell you what to use for your maze parameters!
 SLIDE = 9
 SWITCH = 5
