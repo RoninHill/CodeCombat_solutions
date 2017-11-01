@@ -18,7 +18,7 @@ local function onSpawn(e)
         -- Move pet closer to ogre camp.
         pet:moveXY(40,60)
         local enemy = pet:findNearestByType("munchkin")
-        if (enemy) then
+        if (enemy and enemy.maxHealth < hero.maxHealth * 0.1) then
             -- Carry ogre to fire traps.
             pet:carryUnit(enemy, 43, 17)
         end
