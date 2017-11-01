@@ -24,9 +24,9 @@ local function onSpawn(e)
         end
         -- If hero's health is low, move griffin to potions
         if (hero.health <= hero.maxHealth / 2) then
-            local item = hero:findNearestItem()
-            -- Move pet to potions.
+            -- Move pet closer to potions.
             pet:moveXY(40, 7)
+            local item = hero:findNearestItem()
             if (item) then
                 -- Carry potion to hero.
                 pet:carryUnit(item, hero.pos.x, hero.pos.y)
